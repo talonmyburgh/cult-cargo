@@ -16,8 +16,9 @@ cabs:
 
     inputs:
       input_filepaths:
-        dtype: List[str]
+        dtype: File
         info: The path to the input files be it GUPPI RAW file stem or all filepaths; Seticore Stamps filepath
+        required: true
         policies:
           repeat: list
           positional: true
@@ -38,6 +39,7 @@ cabs:
       polarisations:
         info: The polarisation characters for each polarisation, as a string (e.g. 'xy')
         dtype: str
+        default: xy
         required: false
       frequency-mhz-begin:
         info: The lowest frequency (MHz) of the fine-spectra to analyse (at least 1 channel will be processed)
