@@ -97,6 +97,6 @@ cabs:
     outputs:
       output-filepath:
         info: The path to which the output will be written (instead of alongside the raw_filepath)
-        dtype: Directory
+        dtype: File
         required: false
 
