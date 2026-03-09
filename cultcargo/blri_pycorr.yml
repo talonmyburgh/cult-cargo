@@ -38,6 +38,7 @@ cabs:
         info: The polarisation characters for each polarisation, as a string (e.g. 'xy')
         dtype: str
         required: false
+        default: 'xy'
       frequency-mhz-begin:
         info: The lowest frequency (MHz) of the fine-spectra to analyse (at least 1 channel will be processed)
         required: false
