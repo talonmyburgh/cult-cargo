@@ -16,7 +16,7 @@ cabs:
 
     inputs:
       input_filepaths:
-        dtype: str
+        dtype: File
         info: The path to the input files be it GUPPI RAW file stem or all filepaths; Seticore Stamps filepath
         policies:
           positional: true
