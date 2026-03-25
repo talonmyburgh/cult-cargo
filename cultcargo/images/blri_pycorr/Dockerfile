@@ -2,9 +2,9 @@ FROM {REGISTRY}/{default_pip_base_image}:{default_python_version}-{BUNDLE_VERSIO
 
 {pre_install}
 
-RUN uv pip install "seticore @ git+https://github.com/MydonSolutions/seticore.git#subdirectory=python"
 RUN uv python pin python{default_python_version}
 RUN uv pip -n install --system {package} {extra_deps}
+RUN uv pip install --system "seticore @ git+https://github.com/MydonSolutions/seticore.git#subdirectory=python"
 
 ## leaving old command for reference
 # RUN python{default_python_version} -m pip install --no-cache-dir {package} {extra_deps}
