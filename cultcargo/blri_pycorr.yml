@@ -34,8 +34,8 @@ cabs:
         dtype: int
         default: 1
         required: false
-      dedispersion:
-        info: Dedrifting/dedispersion rate in Hz/s to apply after upchannelisation by upchannelisation-rate
+      dedrift:
+        info: Dedrifting rate in Hz/s to apply after upchannelisation by upchannelisation-rate
         dtype: float
         default: 0.0
         required: false
