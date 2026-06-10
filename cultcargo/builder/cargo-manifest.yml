@@ -338,8 +338,7 @@ images:
 
   blri_pycorr:
     assign:
-      extra_deps: "-U python-casacore pyuvdata seticore@git+https://github.com/MydonSolutions/seticore.git#subdirectory=python"
+      extra_deps: "-U python-casacore pyuvdata"
     versions:
       master:
-        package: git+https://github.com/MydonSolutions/BLRI.git@add-dedispersion
-
+        package: git+https://github.com/MydonSolutions/BLRI.git#egg=BLRI[seticore]
